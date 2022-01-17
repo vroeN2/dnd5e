@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "FantasyStyled";
+  src: url("./assets/fonts/breathefireiii-pklob-webfont.woff") format("woff"),
+    url("./assets/fonts/breathefireiii-pklob-webfont.woff2") format("woff2");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "FantasyStyled2";
+  src: url("./assets/fonts/draconis-jrw6b-webfont.woff") format("woff"),
+    url("./assets/fonts/draconis-jrw6b-webfont.woff2") format("woff2");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: url(./assets/backgrounds/2a.jpg);
+}
+
+.navbar__wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1vh 5vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.page_title {
+  font-family: FantasyStyled;
+  font-size: 2.25em;
+  font-weight: 100;
   color: white;
+  user-select: none;
+  flex-grow: 4;
 }
 
-.App-link {
-  color: #61dafb;
+.links__wrapper {
+  margin-right: 2vw;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__link {
+  font-family: FantasyStyled2;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s all ease-in;
+}
+
+.navbar__link:hover {
+  transform: scale(1.1);
+  color: #ffffffac;
 }
