@@ -1,3 +1,5 @@
+@import "~antd/dist/antd.css";
+
 @font-face {
   font-family: "FantasyStyled";
   src: url("./assets/fonts/breathefireiii-pklob-webfont.woff") format("woff"),
@@ -23,10 +25,11 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 1vh 5vh;
+  padding: 1vh 3vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(31, 31, 31, 0.3);
 }
 
 .page_title {
@@ -51,10 +54,24 @@ body {
   font-size: 1.5em;
   color: white;
   text-decoration: none;
-  transition: 0.2s all ease-in;
+  transition: 0.15s all ease-in;
 }
 
 .navbar__link:hover {
   transform: scale(1.1);
   color: #ffffffac;
+}
+
+.content__wrapper {
+  padding: 1vh 2vw;
+  margin-top: calc(80px + 5vh);
+}
+
+input {
+  background: transparent;
+  transition: 0.1s all ease;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.2);
 }
